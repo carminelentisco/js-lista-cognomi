@@ -15,3 +15,7 @@ console.log('Lista cognomi in ordine sparso : ', listaCognomi )
 listaCognomi.sort();
 console.log('Lista cognomi ordinata alfabeticamente : ', listaCognomi);
 
+// Stampa posizione nuovo cognome nell arrey
+
+var positonCognome = listaCognomi.indexOf(cognomeUente);
+console.log('Il cognome è nella posizione n°', positonCognome);
