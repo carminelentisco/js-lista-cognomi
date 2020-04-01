@@ -1,21 +1,27 @@
-/********** Controllo inserimento JS **********/
+/********** COGNOMI JS **********/
 
-//console.log('cognomi.js è stato inserito correttamente.');
-
+// Variabili iniziali
 var cognomeUente = prompt('Inserisci il tuo cognome');
 var listaCognomi = ['Bianchi', 'Rossi', 'Duzioni', 'Balsano', 'Verdi'];
+
+// Copia dell arrey ( listaCognomi -> listaCognomiOriginal )
+
+var listaCognomiOriginal = listaCognomi.slice();
 
 // Aggiunta 
 
 listaCognomi.push(cognomeUente);
-console.log('Lista cognomi in ordine sparso : ', listaCognomi )
 
-// Stampa la lista in ordine alfabetico
+// Ordina la lista
 
 listaCognomi.sort();
-console.log('Lista cognomi ordinata alfabeticamente : ', listaCognomi);
 
-// Stampa posizione nuovo cognome nell arrey
+// Cerca l'indice del cognome
 
-var positonCognome = listaCognomi.indexOf(cognomeUente);
-console.log('Il cognome è nella posizione n°', positonCognome);
+var positonCognome = listaCognomi.indexOf(cognomeUente) + 1;
+
+//Consol log
+
+console.log('LISTA ORIGINALE : ', listaCognomiOriginal );
+console.log('LISTA ORDINATA : ', listaCognomi);
+console.log('POSIZIONE NELLA LISTA : ', positonCognome);
